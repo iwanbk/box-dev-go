@@ -7,3 +7,8 @@ RUN	cd && \
 	# vim
 	cd ~/.vim/bundle && \
 	git clone https://github.com/fatih/vim-go.git
+
+#env variables
+ADD bashrc /tmp
+RUN cat /tmp/bashrc >> ~/.bashrc
+RUN rm /tmp/bashrc
