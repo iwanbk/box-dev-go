@@ -1,8 +1,8 @@
-FROM iwanbk/box-dev-ubuntu1604
+FROM iwanbk/box-dev-ubuntu1804
 MAINTAINER Iwan Budi Kusnanto <iwanbk@gmail.com>
 RUN	cd && \
-	wget -c https://dl.google.com/go/go1.10.linux-amd64.tar.gz && \
-	tar zxf go1.10.linux-amd64.tar.gz && \
+	wget -c https://dl.google.com/go/go1.11.2.linux-amd64.tar.gz && \
+	tar zxf go1.11.2.linux-amd64.tar.gz && \
 
 	# vim
 	cd ~/.vim/bundle && \
